@@ -153,6 +153,16 @@ table, th, td {
     grid-area: cardButton;
 }
 
+.blogContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parrafo p {
+    text-align: left;
+}
+
 /* media queries */
 @media screen and (min-width:320px) {
     .productos {
@@ -175,6 +185,9 @@ table, th, td {
             "cardDescription"
             "cardButton";
     }
+    .blogImage img {
+        height: 260px;
+    }
 }
 @media screen and (min-width:600px) {
     .productos {
@@ -194,5 +207,8 @@ table, th, td {
             "cardImage cardTitle"
             "cardImage cardDescription"
             "cardImage cardButton";
+    }
+    .blogImage img {
+        height: initial;
     }
 }
